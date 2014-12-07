@@ -1,4 +1,4 @@
-ds <- read.table("C:\\Coursera\\household_power_consumption.txt", sep = ";", header = TRUE, colClasses = c("Date","Time","numeric","numeric","numeric","numeric","numeric","numeric","numeric"))
+ds <- read.table("C:\\Coursera\\household_power_consumption.txt", sep = ";", header = TRUE)
 
 hist(as.numeric(ds$Global_active_power)/1000,col="red",main="Global Active Power",breaks=12
      ,xlab="Global Active Power (killowatts)", ylab="Frequency"
